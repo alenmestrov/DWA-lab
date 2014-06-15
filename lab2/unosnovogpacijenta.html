@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ZKD j.d.o.o.</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+	<header>
+<a href="index.html"><img class="slikalogo" src="images/logo.png" alt="logo tvrtke"></a>
+	<a href="#op">Osobni Podaci</a>
+	<a href="#sk">Školovanje</a>
+	<a href="#ri">Radno Iskustvo</a>
+	<a href="#zn">Znanje</a>
+	<div class="odjava">
+	<label class="lboja"><? php	echo $_GET['username'];	?></label>
+	<a href="login.html"><button>ODJAVA</button></a>
+	</div>
+	</header>
+	
+	<nav>
+	<ul>
+	<li><a href="popiskorisnika.php">Korisnici</a></li>
+	<li><a href="#">Nav</a></li>
+	<li><a href="#">Nav</a></li>
+	<li><a href="#">Nav</a></li>
+	<li><a href="#">Nav</a></li>
+	
+	</ul>
+	</nav>
+	<div class="sadrzaj">
+	<div class="content_info">
+		 <form action="unosnovogpacijenta.php" method="post">
+          <label for="ime">Ime:</label></br>
+          <input id="ime" type="text" name="ime" /></br></br>
+          <label for="prezime">Prezime:</label></br>
+          <input id="prezime" type="text" name="prezime" /></br></br>
+          <label for="spol">Spol:</label></br></br>
+          <input id="spol" type="radio" name="gen" value="M"/>M
+		  <input id="spol" type="radio" name="gen" value="Ž"/>Ž<br></br>
+		  <label for="datumrodenja">Datum rođenja: </label></br>
+          <input id="datumrodenja" type="text" name="datumrodenja" /></br></br>
+		  <label for="mjesto">Mjesto rođenja:</label></br>
+          <input id="mjesto" type="text" name="mjesto" /></br></br>
+		  <label for="adresa">Adresa i mjesto stanovanja:</label></br>
+          <input id="adresa" type="text" name="adresa" /></br></br>
+		  <label for="kgrupa">Krvna grupa (ako zna):</label></br></br>
+		  <input id="kgrupa" type="radio" name="krv" value="A"/>A
+          <input id="kgrupa" type="radio" name="krv" value="B"/>B
+		  <input id="kgrupa" type="radio" name="krv" value="AB"/>AB
+		  <input id="kgrupa" type="radio" name="krv" value="0"/>0
+		  <input id="kgrupa" type="radio" name="krv" value="+"/>+
+		  <input id="kgrupa" type="radio" name="krv" value="-"/>-</br></br>
+		  <label for="tegobe">Ima li prijašnjih medicinskih tegoba (srčane tegobe, tlak, virusne bolesti (Hepatits, HIV)):</label></br></br>
+          <input id="tegobe" type="radio" name="tegobe" value="Da"/>Da</br></br>
+		  <input id="tegobe" type="radio" name="tegobe" value="Ne"/>Ne</br></br>
+		  <label for="kojetegobe">Ako je odgovor na prijašnje pitanje "Da" popuniti: Koje tegobe osoba ima</label></br>
+          <input id="kojetegobe" type="textarea" name="kojetegobe" /></br></br>
+		  <label for="alergija">Je li osoba alergična na lijekove:</label></br></br>
+          <input id="alergija" type="radio" name="alergija" value="Da"/>Da</br></br>
+		  <input id="alergija" type="radio" name="alergija" value="Ne"/>Ne</br></br>
+		  <label for="kojaalergija">Ako je odgovor na prijašnje pitanje "Da" popuniti: Na koje lijekove je osoba alergična</label></br>
+          <input id="kojaalergija" type="textarea" name="kojaalergija" /></br></br></br>
+          <p><input type="submit" value="Posalji" class="InputButton" /></p>
+        </form>   
+			</div>
+	</div>
+	<footer class="footerupis">
+			<span class="ftekst">COPYRIGHT ZKD, 2014</span>
+		</footer>
+	</body>
+</html>
